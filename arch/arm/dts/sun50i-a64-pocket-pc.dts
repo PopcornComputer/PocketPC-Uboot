@@ -78,8 +78,8 @@
 
 &reg_dcdc2 {
 	regulator-always-on;
-	regulator-min-microvolt = <1100000>;
-	regulator-max-microvolt = <1100000>;
+	regulator-min-microvolt = <1040000>;
+	regulator-max-microvolt = <1300000>;
 	regulator-name = "vdd-cpux";
 };
 
@@ -119,9 +119,9 @@
 
 &reg_aldo1 {
 	regulator-always-on;
-	regulator-min-microvolt = <1800000>;
-	regulator-max-microvolt = <1800000>;
-	regulator-name = "vcc-csi";
+	regulator-min-microvolt = <3300000>;
+	regulator-max-microvolt = <3300000>;
+	regulator-name = "vcc-pe";
 };
 
 &reg_dldo1 {
@@ -140,8 +140,6 @@
 
 &reg_dc1sw {
 	regulator-always-on;
-	regulator-min-microvolt = <3300000>;
-	regulator-max-microvolt = <3300000>;
 	regulator-name = "vcc-lcd";
 };
 
@@ -156,7 +154,7 @@
 	regulator-always-on;
 	regulator-min-microvolt = <2500000>;
 	regulator-max-microvolt = <2500000>;
-	regulator-name = "vcc-lcd";
+	regulator-name = "vcc-2v5-lcd";
 };
 
 &reg_dldo3 {
